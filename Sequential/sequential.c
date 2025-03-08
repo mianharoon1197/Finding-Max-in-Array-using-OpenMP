@@ -22,7 +22,7 @@ int main()
     int Array[SIZE];
 
     int maxNum;
-    double start, end, totalTime = 0;
+    double start, end, totalTime = 0.0;
 
     // initializing array with raandom numbers
     for (int i = 0; i < SIZE; i++)
@@ -33,9 +33,9 @@ int main()
     // running 10 times
     for (int i = 1; i <= 10; i++)
     {
-        start = omp_get_wtime();
+        start = omp_get_wtime();//start time of each iteration
         maxNum = findMax(Array, SIZE);
-        end = omp_get_wtime();
+        end = omp_get_wtime();//end time of each iteration
         double timeTaken = (end - start);//time for each iteration
         printf("Run %d: Max Value = %d, Time Taken = %f seconds\n", i, maxNum, timeTaken);
         totalTime += timeTaken;//total time of all iterations

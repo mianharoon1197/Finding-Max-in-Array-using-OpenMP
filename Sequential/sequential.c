@@ -27,7 +27,7 @@ int main()
     // initializing array with raandom numbers
     for (int i = 0; i < SIZE; i++)
     {
-        Array[i] = rand() % 10000;
+        Array[i] = rand() % 1000;
     }
 
     // running 10 times

@@ -14,7 +14,7 @@ int findMax(int arr[], int size)
             max = arr[i];
         }
     }
-    return max; // returning max value
+    return max; // returning the max value
 }
 
 int main()
@@ -41,8 +41,8 @@ int main()
         totalTime += timeTaken;//total time of all iterations
     }
 
-    printf("Max Number: %d\n", maxNum);
-    printf("Average Time: %f\n", totalTime / 10);
+   
+    printf("\nAverage Execution Time: %f\n", totalTime / 10);//finding avg execution time
 
     return 0;
 }

@@ -2,9 +2,9 @@
 #include <omp.h>
 #include <stdlib.h>
 
-#define SIZE 100000 // Max Size of array
+#define SIZE 10000000 // Max Size of array
 
-int findMax(int arr[], int size)
+int findMax(int *arr, int size)
 {
     int max = arr[0];
     for (int i = 1; i < size; i++)
@@ -19,7 +19,7 @@ int findMax(int arr[], int size)
 
 int main()
 {
-    int Array[SIZE];
+    int *Array = (int *)malloc(SIZE * sizeof(int));
 
     int maxNum;
     double start, end, totalTime = 0.0;

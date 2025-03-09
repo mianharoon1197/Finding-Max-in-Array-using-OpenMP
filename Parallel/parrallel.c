@@ -7,7 +7,7 @@
 int findMax(int *arr, int size)
 {
     int Max = arr[0];
-    #pragma omp parallel for reduction(max:Max) schedule(static)
+    #pragma omp parallel for reduction(max:Max) schedule(static,1000)
     for (int i = 1; i < size; i++)
     {
        

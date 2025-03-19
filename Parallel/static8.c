@@ -62,6 +62,3 @@ int main()
 //at the end it automaticaly merges all values of Max in final result
 
 
-// dynamic is not used as it assigns part of array when any of thread is free but it adds overhead
-// for threads coordination it is best to when irregular work loads
-// in our case finding max each iteration takes aproximately same time so no need to use dynamic

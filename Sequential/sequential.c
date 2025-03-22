@@ -42,7 +42,7 @@ int main()
     }
 
    
-    printf("\nAverage Execution Time: %f\n", totalTime / 10);//finding avg execution time
+    printf("\nAverage Execution Time: %f\n", totalTime / 10);// avg execution time
 
     return 0;
 }
